@@ -430,7 +430,11 @@
         let messageValue = form.elements["message"];
 
         if (nameValue && emailValue && messageValue ) {
-            window.open('mailto:parva.c.patel@gmail.com?subject=Contact Request from portfolio: '+ nameValue + ' (' + emailValue + ')' + '&body=' + messageValue);
+            let mobileNumber = ""
+            if (mobileValue.value.length > 0) {
+                mobileNumber = ", Ph. " + mobileValue.value;
+            }
+            window.open('mailto:parva.c.patel@gmail.com?subject=Contact Request from portfolio: '+ nameValue.value + ' (' + emailValue.value + mobileNumber + ')' + '&body=' + messageValue.value);
         }
     });
 
