@@ -7,7 +7,7 @@ setTimeout(() => {
     timeOut = true;
     if (pageLoaded) {
         mainPage.style.display = "block";
-        transformFunction2();
+        setTimeout(() => {transformFunction2()}, 800);
         svgAnimation();
     }
 }, 3000);
@@ -16,7 +16,8 @@ function mainPageLoaded() {
     pageLoaded = true;
     if (timeOut) {
         mainPage.style.display = "block";
-        transformFunction2();
+        // transformFunction2();
+        setTimeout(() => {transformFunction2()}, 800);
         svgAnimation();
     }
 }
@@ -44,7 +45,7 @@ function transformFunction() {
 }
 
 function transformFunction2() {
-    $('.transform-out-of-place3').each(function (i) {
+    $('.transform-out-of-place3').each(function () {
         let bottom_of_object = $(this).offset().top;
         let bottom_of_window = $(window).scrollTop() + $(window).height();
         if (bottom_of_window > bottom_of_object + 150) {
