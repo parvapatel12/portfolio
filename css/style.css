@@ -20,13 +20,18 @@ body a{
     -o-transition:0.5s all;
     -ms-transition:0.5s all;
 }
+
+#main-page {
+    display: none;
+}
+
 body h1,h2,h3,h4,h5,h6{
     /*font-family: 'Asap', sans-serif;*/
 }
 /*-- header --*/
 #home {
     /*background: url(../images/header-bg.jpg) no-repeat center top;*/
-    background: url(../images/ParvaPatel3_Blur_White.jpg) fixed center top;
+    background: url(../images/ParvaPatel1-White.jpg) fixed center top;
     /*background-position: -10px 100px;*/
     /*background-position: 75% 21%;*/
     background-size: cover;
@@ -1316,6 +1321,24 @@ span.border.two:after {
     -moz-opacity: 0;
     filter: alpha(opacity=0);
 }
+
+.first-wave {
+    position: absolute;
+    width: 100%;
+    height: 93px;
+    background: url(../images/waves/wave1.png);
+    background-size: 100% 100%;
+    bottom: 0;
+}
+
+.second-wave {
+    position: absolute;
+    width: 100%;
+    height: 93px;
+    background: url(../images/waves/wave3.png);
+    background-size: 100% 100%;
+}
+
 /*-- responsive-design --*/
 @media(max-width:1366px){
     .about-left-grid {
@@ -1360,6 +1383,14 @@ span.border.two:after {
         font-size:0.9em;
         line-height: 2em;
         margin-top: 0.5em;
+    }
+}
+@media(max-width: 1200px) {
+    .first-wave {
+        height: 40px;
+    }
+    .second-wave {
+        height: 40px;
     }
 }
 @media(max-width:1024px){
@@ -1845,6 +1876,14 @@ span.border.two:after {
         margin: 0em 0 1em 0;
         padding: 0;
     }
+
+    .first-wave {
+        height: 0;
+    }
+
+    .second-wave {
+        height: 0;
+    }
 }
 @media(max-width:414px){
     span.menu img {
@@ -2070,6 +2109,11 @@ span.border.two:after {
     font-weight: 200;
 }
 
+.photo-description-addons .href-link {
+    color: white;
+    font-weight: 500;
+}
+
 .home-about {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -2219,6 +2263,12 @@ span.border.two:after {
 }
 
 .transform-out-of-place2 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition-duration: 0.5s;
+}
+
+.transform-out-of-place3 {
     opacity: 0;
     transform: translateY(100px);
     transition-duration: 0.5s;
