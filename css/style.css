@@ -1325,11 +1325,7 @@ span.border.two:after {
 .first-wave {
     position: absolute;
     width: 100%;
-<<<<<<< Updated upstream
     height: 65px;
-=======
-    height: 63px;
->>>>>>> Stashed changes
     background: url(../images/waves/wave1.png);
     background-size: 100% 100%;
     bottom: 0;
@@ -1370,7 +1366,6 @@ span.border.two:after {
 
 }
 @media(max-width:1280px){
-
     .thumb .team_pos {
         bottom: -83px;
         left: 0;
@@ -1391,7 +1386,7 @@ span.border.two:after {
 }
 @media(max-width: 1200px) {
     .first-wave {
-        height: 40px;
+        height: 20px;
     }
     .second-wave {
         height: 40px;
