@@ -1325,7 +1325,11 @@ span.border.two:after {
 .first-wave {
     position: absolute;
     width: 100%;
+<<<<<<< Updated upstream
     height: 65px;
+=======
+    height: 63px;
+>>>>>>> Stashed changes
     background: url(../images/waves/wave1.png);
     background-size: 100% 100%;
     bottom: 0;
