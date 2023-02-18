@@ -2281,3 +2281,11 @@ span.border.two:after {
 .mandatory {
 
 }
+
+.highlightLink {
+    color: #A47458;
+}
+
+.highlightLink:hover {
+    color: #6a4b3a;
+}
