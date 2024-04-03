@@ -2341,3 +2341,9 @@ span.border.two:after {
     transform: translate(-24px, -2px);
     border-radius: 50%;
 }
+.pt-1 {
+    padding-top: 1rem;
+}
+.pt-2 {
+    padding-top: 2rem;
+}
