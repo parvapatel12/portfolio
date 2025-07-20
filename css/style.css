@@ -2296,8 +2296,9 @@ span.border.two:after {
 }
 
 .skills-exp-box {
+    display: inline-block;
     padding: 5px 10px;
-    margin: 0px 5px;
+    margin: 5px;
     background-color: rgba(255,255,255,0.2);
     color: white;
     border-radius: 5px;
