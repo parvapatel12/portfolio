@@ -64,7 +64,7 @@
     align-items: center;
     justify-content: center;
     filter: blur(8px) contrast(18);
-    mix-blend-mode: screen;
+    mix-blend-mode: lighten;
     transition-duration: 1s;
 }
 
